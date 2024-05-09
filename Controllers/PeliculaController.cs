@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using peliculas_api.Context;
@@ -7,6 +8,7 @@ using peliculas_api.Models;
 namespace peliculas_api.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class PeliculaController : ControllerBase
     {

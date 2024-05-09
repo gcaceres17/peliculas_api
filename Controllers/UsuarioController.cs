@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using peliculas_api.Context;
 using peliculas_api.Models;
@@ -6,6 +7,7 @@ using peliculas_api.Models;
 namespace peliculas_api.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class UsuarioController : ControllerBase
     {

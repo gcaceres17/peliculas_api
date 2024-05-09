@@ -12,6 +12,7 @@ using peliculas_api.Models;
 namespace peliculas_api.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class LoginController : ControllerBase
     {
